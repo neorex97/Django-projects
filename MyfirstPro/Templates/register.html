@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>{% for i in name%}
+{{i}}
+{% endfor%}
+{{name}}
+<h1>Register</h1>
+<form action="{% url 'alan' %}" method="POST">
+    {% csrf_token %}
+Name: <input type="text" name="name"><br>
+Address: <input type="text" name="Address"><br>
+ <input type="submit" value="Submit">
+</form>
+</body>
+</html>

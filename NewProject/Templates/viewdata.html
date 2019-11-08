@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+table, th, td {
+  border: 1px solid black;
+</style>
+    <title>Data</title>
+</head>
+<body>
+
+<ul>
+  <li><a href="{%url 'home'%}">HOME</a></li>
+  <li><a href="{%url 'register'%}">REGISTER</a></li>
+  <li><a href>VIEW DETAILS</a></li>
+
+</ul>
+
+<table >
+  <tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Course</th>
+  </tr>
+  {% for i in stdlist %}
+  <tr>
+    <td>{{i.name}}</td>
+    <td>{{i.phone}}</td>
+    <td>{{i.course}}</td>
+  </tr>
+  {% endfor %}
+
+
+</table>
+</body>
+</html>

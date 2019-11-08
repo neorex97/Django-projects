@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+  background-image: url('/home/alan/Desktop/alan/MyfirstPro/Static/blue-sky.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+</head>
+<body>
+<h1>client Login</h1>
+
+    <form>
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  <br>
+  <input type="submit" value="Submit">
+
+</form>
+<a href ="{% url 'home'%}" > take me to home</a>
+</body>
+</html>

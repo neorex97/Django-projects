@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+    {% block body_block%}
+
+    <h3> HOME PAGE </h3>
+    <h1>Hi, welcome all!</h1>
+
+<div class="container">
+<form method="post">
+
+
+    {% csrf_token %}
+    {{msg}}
+
+</form>
+</div>
+
+{% endblock %}
